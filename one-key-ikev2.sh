@@ -252,7 +252,7 @@ function setup_strongswan(){
 --enable-certexpire --enable-radattr --enable-swanctl --enable-openssl --disable-gmp --enable-kernel-libipsec \
 --enable-nat-transport  --disable-mysql  --disable-ldap  --disable-static  --enable-shared  \
 --enable-md4  --enable-eap-aka  --enable-eap-aka-3gpp2  --enable-eap-gtc  --enable-eap-sim  \
---enable-eap-sim-file  --enable-eap-simaka-pseudonym  --enable-eap-simaka-reauth  --enable-eap-simaka-sql  
+--enable-eap-sim-file  --enable-eap-simaka-pseudonym  --enable-eap-simaka-reauth  --enable-eap-simaka-sql
 
     fi
     make; make install
@@ -340,7 +340,7 @@ function create_cert(){
 function configure_ipsec(){
  cat > /usr/local/etc/ipsec.conf<<-EOF
 config setup
-    uniqueids=never 
+    uniqueids=never
 
 conn iOS_cert
     keyexchange=ikev1
