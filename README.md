@@ -441,10 +441,10 @@ charon {
 
 ### 软件安装：
 
-安装strongswan和xl2tpd:
+安装l2tpd:
 
 ```
-yum install strongswan xl2tpd
+yum install xl2tpd
 ```
 
 ### 软件配置：
