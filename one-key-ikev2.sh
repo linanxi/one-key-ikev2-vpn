@@ -242,7 +242,7 @@ function setup_strongswan(){
 --enable-certexpire --enable-radattr --enable-swanctl --enable-openssl --disable-gmp \
 --enable-nat-transport  --disable-mysql  --disable-ldap  --disable-static  --enable-shared  \
 --enable-md4  --enable-eap-aka  --enable-eap-aka-3gpp2  --enable-eap-gtc  --enable-eap-sim  \
---enable-eap-sim-file  --enable-eap-simaka-pseudonym  --enable-eap-simaka-reauth  --enable-eap-simaka-sql
+--enable-eap-sim-file  --enable-eap-simaka-pseudonym  --enable-eap-simaka-reauth  --enable-eap-simaka-sql --enable-systemd --enable-swanctl
 
     else
         ./configure  --enable-eap-identity --enable-eap-md5 \
@@ -252,7 +252,7 @@ function setup_strongswan(){
 --enable-certexpire --enable-radattr --enable-swanctl --enable-openssl --disable-gmp --enable-kernel-libipsec \
 --enable-nat-transport  --disable-mysql  --disable-ldap  --disable-static  --enable-shared  \
 --enable-md4  --enable-eap-aka  --enable-eap-aka-3gpp2  --enable-eap-gtc  --enable-eap-sim  \
---enable-eap-sim-file  --enable-eap-simaka-pseudonym  --enable-eap-simaka-reauth  --enable-eap-simaka-sql
+--enable-eap-sim-file  --enable-eap-simaka-pseudonym  --enable-eap-simaka-reauth  --enable-eap-simaka-sql --enable-systemd --enable-swanctl
 
     fi
     make; make install
