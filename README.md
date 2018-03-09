@@ -657,4 +657,21 @@ iptables -L -n --line-numbers
 删除FORWARD第三行 iptables -D FORWARD 3
 ```
 
+/usr/lib/systemd/system/strongswan.service
+
+```
+[Unit]
+Description=strongSwan IPsec IKEv1/IKEv2 daemon using ipsec.conf
+After=syslog.target network-online.target
+
+[Service]
+ExecStart=/usr/sbin/strongswan start --nofork
+StandardOutput=syslog
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
 
