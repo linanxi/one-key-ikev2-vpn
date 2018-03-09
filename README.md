@@ -472,7 +472,8 @@ conn l2tp
 	type=transport
 	auto=add
 ```
-
+ /usr/local/etc/ipsec.secrets 如下
+ 
 ```
 # ipsec.secrets - strongSwan IPsec secrets file
 : PSK "xxx"  # 自己随意填写密钥
@@ -513,7 +514,7 @@ lock
 proxyarp
 connect-delay 5000
 ```
-
+/etc/ppp/chap-secrets 如下：
 ```
 # Secrets for authentication using CHAP
 # client        server  secret                  IP addresses
