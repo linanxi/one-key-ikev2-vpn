@@ -451,7 +451,7 @@ yum install strongswan xl2tpd
 
 IPsec配置
 
-/etc/strongswan/ipsec.conf 如下：
+/usr/local/etc/ipsec.conf 如下：
 
 ```
 config setup
