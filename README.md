@@ -494,6 +494,8 @@ ppp debug = yes
 pppoptfile = /etc/ppp/options.xl2tpd
 length bit = yes
 ```
+PPP配置
+/etc/ppp/options.xl2tpd 如下：
 
 ```
 ipcp-accept-local
